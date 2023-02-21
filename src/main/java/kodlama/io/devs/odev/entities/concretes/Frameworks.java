@@ -27,12 +27,11 @@ public class Frameworks {
     private String name;
 
     @ManyToOne
-    @JsonIgnore
-    @JoinColumn(name = "language_id", referencedColumnName = "id")
+    @JoinColumn(name = "language_id")
     private ProgrammingLanguage programmingLanguage;
 
-    @Override
-    public String toString() {
-        return this.getName() + " ";
-    }
+    // @Override
+    // public String toString() {
+    // return this.getName() + " ";
+    // }
 }

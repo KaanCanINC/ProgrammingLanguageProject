@@ -1,6 +1,4 @@
-package kodlama.io.devs.odev.business.requests;
-
-import java.util.List;
+package kodlama.io.devs.odev.business.responses;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,7 +7,6 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class CreateFrameworkRequests {
+public class GetByIdResponses {
     private String name;
-    private int pLanguageId;
 }

@@ -15,7 +15,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-
 @Table(name = "ProgrammingLanguages")
 @Getter
 @Setter
@@ -35,13 +34,13 @@ public class ProgrammingLanguage {
     @OneToMany(mappedBy = "programmingLanguage")
     private List<Frameworks> Frameworks;
 
-    @Override
-    public String toString() {
-        String s = " ";
-        for (Frameworks frameworks2 : Frameworks) {
-            s = s + frameworks2.getName();
-        }
-        return " " + this.getName() + " " + s;
-    }
-    
+    // @Override
+    // public String toString() {
+    // String s = " ";
+    // for (Frameworks frameworks2 : Frameworks) {
+    // s = s + frameworks2.getName();
+    // }
+    // return " " + this.getName() + " " + s;
+    // }
+
 }
